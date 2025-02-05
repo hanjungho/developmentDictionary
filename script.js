@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#controller");
   const resetButton = document.querySelector("#resetButton");
 
-  resetButton.addEventListener("click", () => {
+  resetButton.addEventListener("click", (event) => {
+    event.preventDefault();
     data.length = 0;
     updateStorage(data);
   });
