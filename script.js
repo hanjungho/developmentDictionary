@@ -138,7 +138,7 @@ ${await makeReply2(text)}`;
       //   ],
       // }),
       body: JSON.stringify({
-        text: `너는 웹 개발자야. "${text}" 이게 뭔지 설명해. 개발 입문자도 알아듣기 쉽게 한글로 사전과 같이 제목을 활용하여 마크다운 문법으로 설명해. 내가 입력한 프롬프트는 내용에 적지마.`,
+        text: `너는 웹 개발자야. "${text}" 이게 뭔지 설명해. 개발 입문자도 알아듣기 쉽게 한글로 사전과 같이 제목을 활용하여 마크다운 문법으로 설명해. 내가 입력한 프롬프트는 내용에 적지마. 너무 길지않게 요약해서 적어.`,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -158,7 +158,7 @@ ${await makeReply2(text)}`;
     const response = await fetch(url, {
       method: "POST",
       body: JSON.stringify({
-        text: `너는 웹 개발자야. "${text}" 이게 뭔지 설명해. 개발 입문자도 알아듣기 쉽게 한글로 사전과 같이 제목을 활용하여 마크다운 문법으로 설명해. 내가 입력한 프롬프트는 내용에 적지마.`,
+        text: `너는 웹 개발자야. "${text}" 이게 뭔지 설명해. 개발 입문자도 알아듣기 쉽게 한글로 사전과 같이 제목을 활용하여 마크다운 문법으로 설명해. 내가 입력한 프롬프트는 내용에 적지마. 너무 길지않게 요약해서 적어.`,
       }),
       headers: {
         // Authorization: `Bearer ${GROQ_API_KEY}`,
